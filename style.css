@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/image/countdown.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.year {
+    font-size: 500px;
+    opacity: 0.1;
+    position: absolute;
+}
+
+h1 {
+    font-size: 60px;
+    margin: -80px 0 40px;
+}
+
+.countdown {
+    display: flex;
+    transform: scale(2);
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.time h2 {
+    margin: 0 0 5px;
+}
+
+@media(max-width: 500px){
+    h1 {
+        font-size: 45px;
+    }
+    
+    .time {
+        margin: 5px;
+    }
+    
+    .time h2 {
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    .time small {
+        font-size: 10px;
+    }
+    
+    .year {
+        font-size: 250px;
+    }
+    
+}
+
